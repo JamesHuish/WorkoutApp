@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">WorkoutApp</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="workout_no">Workout 1</string>
+    <string name="day1">S/B Primary</string>
+    <string name="day2">Deadlift Primary</string>
+    <string name="day3">S/B Secondary</string>
+    <string name="day4">Deadlift Secondary</string>
+    <string name="complete">Complete Week</string>
+</resources>
