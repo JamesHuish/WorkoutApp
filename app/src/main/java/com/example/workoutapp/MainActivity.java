@@ -18,7 +18,7 @@ import com.example.workoutapp.databinding.ActivityMainBinding;
 public class MainActivity extends AppCompatActivity {
 
     private ActivityMainBinding binding;
-    private Button changeButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,19 +36,5 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(binding.navView, navController);
 
-        changeButton = (Button) findViewById((R.id.button));
-        changeButton.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view) {
-                openActivity2();
-            }
-        });
-
     }
-
-    public void openActivity2(){
-        Intent intent = new Intent(this, workoutActivity.class);
-        startActivity(intent);
-    }
-
 }

@@ -9,4 +9,11 @@
     <string name="day3">S/B Secondary</string>
     <string name="day4">Deadlift Secondary</string>
     <string name="complete">Complete Week</string>
+    <string name="day">Day</string>
+    <string name="Squat">Squat</string>
+    <string name="Bench">Bench</string>
+    <string name="Deadlift">Deadlift</string>
+    <string name="Accessories">Accessories</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
