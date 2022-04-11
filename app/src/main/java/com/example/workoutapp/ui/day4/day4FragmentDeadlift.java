@@ -1,4 +1,4 @@
-package com.example.workoutapp.ui;
+package com.example.workoutapp.ui.day4;
 
 import android.os.Bundle;
 
@@ -10,12 +10,12 @@ import android.view.ViewGroup;
 
 import com.example.workoutapp.R;
 
-public class day1FragmentBench extends Fragment {
+public class day4FragmentDeadlift extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_day1_bench, container, false);
+        return inflater.inflate(R.layout.fragment_day4_deadlift, container, false);
     }
 }
