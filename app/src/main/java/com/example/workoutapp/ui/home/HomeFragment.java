@@ -13,12 +13,10 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.example.workoutapp.R;
-import com.example.workoutapp.databinding.FragmentHomeBinding;
 import com.example.workoutapp.workoutActivity;
 
 public class HomeFragment extends Fragment {
 
-    private FragmentHomeBinding binding;
     View layoutView;
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -55,12 +53,6 @@ public class HomeFragment extends Fragment {
         });
 
         return layoutView;
-    }
-
-    @Override
-    public void onDestroyView() {
-        super.onDestroyView();
-        binding = null;
     }
 
     public void openActivity2(String s){

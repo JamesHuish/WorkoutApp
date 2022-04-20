@@ -9,7 +9,7 @@
         <entry key="..\:/Users/huish/AndroidStudioProjects/WorkoutApp/app/src/main/res/layout/fragment_dashboard.xml" value="0.358695652173913" />
         <entry key="..\:/Users/huish/AndroidStudioProjects/WorkoutApp/app/src/main/res/layout/fragment_day1.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/huish/AndroidStudioProjects/WorkoutApp/app/src/main/res/layout/fragment_day1_accessory.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/huish/AndroidStudioProjects/WorkoutApp/app/src/main/res/layout/fragment_day1_bench.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/huish/AndroidStudioProjects/WorkoutApp/app/src/main/res/layout/fragment_day1_bench.xml" value="0.25" />
         <entry key="..\:/Users/huish/AndroidStudioProjects/WorkoutApp/app/src/main/res/layout/fragment_day1squat.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/huish/AndroidStudioProjects/WorkoutApp/app/src/main/res/layout/fragment_day2_accessory.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/huish/AndroidStudioProjects/WorkoutApp/app/src/main/res/layout/fragment_day2_deadlift.xml" value="0.36666666666666664" />
@@ -19,6 +19,7 @@
         <entry key="..\:/Users/huish/AndroidStudioProjects/WorkoutApp/app/src/main/res/layout/fragment_day4.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/huish/AndroidStudioProjects/WorkoutApp/app/src/main/res/layout/fragment_day4_accessory.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/huish/AndroidStudioProjects/WorkoutApp/app/src/main/res/layout/fragment_home.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/huish/AndroidStudioProjects/WorkoutApp/app/src/main/res/layout/week_rv_item.xml" value="0.33" />
       </map>
     </option>
   </component>
