@@ -2,7 +2,7 @@ package com.example.workoutapp;
 
 public class weekModel {
 
-    private String weekNo;
+    private String Week;
     private String Squat;
     private String Bench;
     private String Deadlift;
@@ -11,8 +11,8 @@ public class weekModel {
     private int id;
 
     // creating getter and setter methods
-    public String getweekNo() {
-        return weekNo;
+    public String getWeek() {
+        return Week;
     }
 
     public String getSquat() {
@@ -55,8 +55,8 @@ public class weekModel {
     }
 
     // constructor
-    public weekModel(String weekNo, String Squat , String Bench, String Deadlift, String Deadlift2) {
-        this.weekNo = weekNo;
+    public weekModel(String Week, String Squat , String Bench, String Deadlift, String Deadlift2) {
+        this.Week = Week;
         this.Squat = Squat;
         this.Bench = Bench;
         this.Deadlift = Deadlift;

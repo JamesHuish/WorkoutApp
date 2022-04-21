@@ -39,7 +39,7 @@ public class weekRVAdapter extends RecyclerView.Adapter<weekRVAdapter.ViewHolder
         // on below line we are setting data
         // to our views of recycler view item.
         weekModel model = weekModelArrayList.get(position);
-        holder.weekNoTV.setText(model.getweekNo());
+        holder.weekNoTV.setText(model.getWeek());
         holder.SquatTV.setText(model.getSquat());
         holder.BenchTV.setText(model.getBench());
         holder.DeadliftTV.setText(model.getDeadlift());

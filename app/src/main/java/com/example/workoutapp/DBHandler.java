@@ -42,15 +42,16 @@ public class DBHandler extends SQLiteOpenHelper{
         // setting our column names
         // along with their data types.
         String query = "CREATE TABLE " + TABLE_NAME + " ("
-                + WEEK_COL + "INTEGER ,"
-                + SQUAT_COL + " INTEGER,"
-                + BENCH_COL + " INTEGER,"
-                + DEADLIFT_COL + " INTEGER,"
-                + DEADLIFT2COL + " INTEGER)";
+                + WEEK_COL + " STRING ,"
+                + SQUAT_COL + " STRING,"
+                + BENCH_COL + " STRING,"
+                + DEADLIFT_COL + " STRING,"
+                + DEADLIFT2COL + " STRING)";
 
         // at last we are calling a exec sql
         // method to execute above sql query
         db.execSQL(query);
+        //insertNewWeek("1");
     }
 
     public void insertNewWeek(String value){
@@ -59,10 +60,10 @@ public class DBHandler extends SQLiteOpenHelper{
         ContentValues values = new ContentValues();
 
         values.put(WEEK_COL, value);
-        values.put(SQUAT_COL, 140);
-        values.put(BENCH_COL, 95);
-        values.put(DEADLIFT_COL, 145);
-        values.put(DEADLIFT2COL, 80);
+        values.put(SQUAT_COL, "0");
+        values.put(BENCH_COL, "0");
+        values.put(DEADLIFT_COL, "0");
+        values.put(DEADLIFT2COL, "0");
 
         db.insert(TABLE_NAME, null, values);
         db.close();
@@ -95,6 +96,18 @@ public class DBHandler extends SQLiteOpenHelper{
         // this method is called to check if the table exists already.
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME);
         onCreate(db);
+    }
+
+    public Boolean checkWeek(String week){
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        Cursor checkCursor = db.rawQuery("SELECT * FROM " + TABLE_NAME + " WHERE " + WEEK_COL + " = " + week, null);
+        if(checkCursor.getCount() <= 0){
+            checkCursor.close();
+            return false;
+        }
+        checkCursor.close();
+        return true;
     }
 
     public ArrayList<weekModel> readCourses() {
